@@ -9,7 +9,7 @@
 # v2 (2026-10-27): 2단계 /scan 검사를 check_scan.py 직접 구독 방식으로 교체.
 
 OBSERVE="${1:-40}"
-DEMO="$HOME/slam_demo"
+DEMO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_ROBOT=/tmp/slam_robot.log
 LOG_SLAM=/tmp/slam_toolbox.log
 

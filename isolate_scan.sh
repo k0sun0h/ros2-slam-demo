@@ -15,7 +15,7 @@
 #
 #   bash isolate_scan.sh
 
-DEMO="$HOME/slam_demo"
+DEMO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DEMO" 2>/dev/null || { echo "폴더 없음: $DEMO"; exit 1; }
 set +u
 source /opt/ros/humble/setup.bash

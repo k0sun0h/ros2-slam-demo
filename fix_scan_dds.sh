@@ -18,7 +18,7 @@
 #
 #   bash fix_scan_dds.sh
 
-DEMO="$HOME/slam_demo"
+DEMO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DEMO" 2>/dev/null || { echo "폴더 없음: $DEMO"; exit 1; }
 
 if [ ! -f /opt/ros/humble/setup.bash ]; then

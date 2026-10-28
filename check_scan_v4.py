@@ -79,7 +79,7 @@ def main():
     proc = None
     robot_log = None
     if spawn:
-        demo = os.path.join(os.path.expanduser('~'), 'slam_demo')
+        demo = os.path.dirname(os.path.abspath(__file__))
         robot = os.path.join(demo, 'fake_robot.py')
         if not os.path.isfile(robot):
             robot = 'fake_robot.py'

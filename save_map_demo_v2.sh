@@ -19,7 +19,7 @@
 
 OBSERVE="${1:-90}"
 NAME="${2:-room}"
-DEMO="$HOME/slam_demo"
+DEMO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT="$DEMO/$NAME"
 LOG_ROBOT=/tmp/slam_robot.log
 LOG_SLAM=/tmp/slam_toolbox.log
